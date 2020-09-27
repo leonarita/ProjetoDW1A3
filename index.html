@@ -53,10 +53,15 @@
 
                     <div class="menu">
                         <div class="menu-title">
+                            <p></p>
                             <h3>Categorias</h3>
+
+                            <button onclick="hideList('article-list')">
+                                <img class="minimize" src="./assets/minimize.svg" alt="ocultar">
+                            </button>
                         </div>
 
-                        <ul>
+                        <ul id="article-list">
                             <li>Artigos recentes</li>
                             <li>Todos os artigos</li>
                             <li>Visual C#</li>
@@ -103,10 +108,15 @@
 
                     <div class="menu">
                         <div class="menu-title">
+                            <p></p>
                             <h3>Programas</h3>
+
+                            <button onclick="hideList('programs-list')">
+                                <img class="minimize" src="./assets/minimize.svg" alt="ocultar">
+                            </button>
                         </div>
 
-                        <ul>
+                        <ul id="programs-list">
                             <li>Escola Infantil</li>
                             <li>Video Locadora</li>
                             <li>Finanças Pessoal</li>
@@ -187,10 +197,15 @@
                     <div class="menu">
                         
                         <div class="menu-title">
+                            <p></p>
                             <h3>Destaques</h3>
+
+                            <button onclick="hideList('spotlight-list')">
+                                <img class="minimize" src="./assets/minimize.svg" alt="ocultar">
+                            </button>
                         </div>
 
-                        <ul>
+                        <ul id="spotlight-list">
                             <li>Super DVD Visual Basic</li>
                             <li>Todos os artigos</li>
                             <li>Super DVD .NET</li>
@@ -213,10 +228,15 @@
 
                     <div class="menu">
                         <div class="menu-title">
+                            <p></p>
                             <h3>RSS Feeds</h3>
+                            
+                            <button onclick="hideList('rss-list')">
+                                <img class="minimize" src="./assets/minimize.svg" alt="ocultar">
+                            </button>
                         </div>
 
-                        <ul>
+                        <ul id="rss-list">
                             <li>Os mais recentes</li>
                             <li>Os mais acessados</li>
                             <li>Artigos do mês</li>
@@ -229,18 +249,28 @@
 
                     <div class="menu">
                         <div class="menu-title">
-                            <h3>RSS Feeds</h3>
+                            <p></p>
+                            <h3>Anuncio</h3>
+
+                            <button onclick="hideList('ad-list')">
+                                <img class="minimize" src="./assets/minimize.svg" alt="ocultar">
+                            </button>
                         </div>
 
-                        <img src="./assets/ad-course.jpg" alt="Curso de Xamarin" style="width: 100%;">
+                        <img id="ad-list" src="./assets/ad-course.jpg" alt="Curso de Xamarin" style="width: 100%;">
                     </div>
 
                     <div class="menu">
                         <div class="menu-title">
-                            <h3>Clique aqui e faça seu pedido</h3>
+                            <p></p>
+                            <h3>Faça seu pedido</h3>
+
+                            <button onclick="hideList('order-list')">
+                                <img class="minimize" src="./assets/minimize.svg" alt="ocultar">
+                            </button>
                         </div>
 
-                        <div class="images-sale">
+                        <div id="order-list" class="images-sale">
                             <img src="./assets/book-01.png" alt="Livro MVP">
                             <img src="./assets/book-02.gif" alt="Livro ASP ADO">
                         </div>

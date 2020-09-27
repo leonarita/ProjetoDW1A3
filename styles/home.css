@@ -68,7 +68,7 @@
     background-color: var(--primary-color);
     width: 100%;
     border-radius: 0.6rem;
-    height: 5%;
+    height: 5rem;
     align-items: center;
 }
 
@@ -123,12 +123,24 @@
 }
 
 #index-page #content .menu .menu-title {
+    display: flex;
+    justify-content: space-between;
+
     padding: 0.6rem;
     background-color: var(--menu-color);
 
     border-bottom: 0.1rem solid var(--table-border-color);
     border-top-left-radius: 0.4rem;
     border-top-right-radius: 0.4rem;
+}
+
+#index-page #content .menu .menu-title button {
+    background-color: var(--menu-color);
+    border: none;
+}
+
+#index-page #content .menu .menu-title .minimize {
+    width: 1rem;
 }
 
 #index-page #content .menu h3 {
@@ -239,6 +251,10 @@
     #index-page #content main h3 {
 
         padding: 0.4rem;
+    }
+
+    #index-page #content .menu .images-sale img {
+        width: 4rem;
     }
 
     #index-page .foot p {
