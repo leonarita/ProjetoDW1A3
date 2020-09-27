@@ -56,7 +56,7 @@
     width: 188px;
     height: 16px;
     font-family: serif;
-    padding: 0.6rem;
+    padding: 0.8rem;
 }
 
 /* webkit solution */
@@ -82,7 +82,7 @@
     justify-content: center;
 }
 
-#index-page #content main h3 {
+#index-page #content main .title-main {
     display: flex;
     justify-content: center;
     background-color: var(--primary-color);
@@ -125,8 +125,9 @@
 
 #index-page #content main .article .title-article {
     background-color: var(--secondary-color);
-    border-top-left-radius: 0.6rem;
-    border-top-right-radius: 0.6rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border: 0.01rem solid;
 }
 
 #index-page #content main .article .title-article h4 {
@@ -136,8 +137,9 @@
 }
 
 #index-page #content main .article .info-article {
-    border-bottom-left-radius: 0.6rem;
-    border-bottom-right-radius: 0.6rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border: 0.01rem solid;
 }
 
 #index-page #content main .article .info-article p {
@@ -147,8 +149,9 @@
 
 #index-page #content main .article .info-article p:hover {
     background-color: var(--hover-color);
-    border-bottom-left-radius: 0.6rem;
-    border-bottom-right-radius: 0.6rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border: 0.01rem solid;
 }
 
 #index-page #content main a {
@@ -158,10 +161,16 @@
     align-items: center;
 }
 
+#index-page #content main .new {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+}
+
 #index-page #content .menu {
     border: 0.1rem solid var(--table-border-color);
 
-    border-radius: 0.4rem;
+    border-radius: 0.6rem;
     width: 18rem;
     margin: 1rem 0;
 }
@@ -214,6 +223,9 @@
 
 #index-page #content .menu ul li:hover {
     background-color: var(--hover-color);
+    border-bottom-left-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    border: 0.01rem solid;
 }
 
 #index-page #content .menu .images-sale {
@@ -293,7 +305,7 @@
         margin: 2rem 0;
     }
 
-    #index-page #content main h3 {
+    #index-page #content main .title-main {
         height: 4rem;
         padding: 0.4rem;
     }
@@ -304,6 +316,10 @@
 
     #index-page #content main .container-total-articles .total-articles {
         width: 100%;
+    }
+
+    #index-page #content main .new {
+        margin-top: 1rem;
     }
 
     #index-page .foot p {
@@ -319,6 +335,10 @@
 
     #index-page header .center .subtitle-logo {
         font-size: 0.9rem;
+    }
+
+    #index-page #content .menu {
+        margin-top: 1rem;
     }
 }
 
