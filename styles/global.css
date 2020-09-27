@@ -1,0 +1,36 @@
+/* Leonardo Narita (SP3022498) */
+
+:root {
+    --title-color: #322153;
+    --primary-color: #a1d6fa;
+    --primary-color-dark: #0000FE;
+    --secondary-color: #FF9933;
+    --menu-color: #6898D0;
+    --table-color: #E8F1FF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f5;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Ubuntu, sans-serif;
+}
+
+p, li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+}
+

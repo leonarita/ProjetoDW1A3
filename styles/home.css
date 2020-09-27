@@ -1,3 +1,180 @@
-/* Nome Sobrenome (Prontuário) */
+/* Leonardo Narita (SP3022498) */
+
+#index-page {
+    margin: 0.8rem 4rem;
+}
+
+#index-page header {
+    margin: 2rem 0;
+}
+
+#index-page header .center {
+    display: flex;
+    justify-content: center;
+}
+
+#index-page header .center .subtitle-logo {
+    color: var(--secondary-color);
+    margin-block-start: 0;
+}
+
+#index-page header .guide {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1.4rem;
+}
+
+#index-page header .guide .location ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+#index-page header .guide .location ul li {
+    margin-right: 1rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#index-page header .guide input {
+    padding: 0.3rem;
+}
+
+#index-page #content {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    column-gap: 4rem;
+}
+
+#index-page #content main {
+    display: flex;
+    justify-content: center;
+}
+
+#index-page #content main h3 {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    width: 100%;
+    border-radius: 0.6rem;
+    height: 5%;
+    align-items: center;
+}
+
+#index-page #content main .article {
+    margin-top: 1.4rem;
+    border: 0.01rem solid rgba(121, 119, 119, 0.699);
+    width: 80%;
+    border-radius: 1rem;
+}
+
+#index-page #content main .article .title-article {
+    background-color: var(--secondary-color);
+    border-top-left-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
+}
+
+#index-page #content main .article .title-article h4 {
+    padding: 0.8rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+#index-page #content main .article .info-article {
+    border-bottom-left-radius: 0.6rem;
+    border-bottom-right-radius: 0.6rem;
+}
+
+#index-page #content main .article .info-article p {
+    padding: 0.4rem 0;
+    padding-left: 0.8rem;
+}
+
+#index-page #content main a {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+#index-page #content .menu-category {
+    border: 0.1rem solid rgba(121, 119, 119, 0.699);
+
+    border-radius: 0.4rem;
+    width: 18rem;
+    margin: 1rem 0;
+}
+
+#index-page #content .menu-category .menu-title {
+    padding: 0.6rem;
+    background-color: var(--menu-color);
+
+    border-bottom: 0.1rem solid rgba(121, 119, 119, 0.699);;
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+}
+
+#index-page #content .menu-category h3 {
+    color: #f0f0f5;
+    background-clip: content-box;
+    display: flex;
+    justify-content: center;
+}
+
+#index-page #content .menu-category ul {
+    list-style: none;
+}
+
+#index-page #content .menu-category ul li {
+    color: var(--primary-color-dark);
+    padding: 0.4rem 0.5rem 0.2rem 0.8rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#index-page #content .menu-category ul li:before {
+    content: '\2022';
+    margin: 0 2px;
+    color: var(--secondary-color);
+    margin-right: 0.4rem;
+}
+
+#index-page #content .menu-category ul li:hover {
+    background-color: rgb(223, 221, 221);
+}
+
+@media (max-width: 1200px) {
+
+    #index-page #content .menu-category {
+        width: 14rem;
+    }
+}
+
+@media (max-width: 900px) {
+
+    #index-page header .guide {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+    }
+
+    #index-page header .guide .location ul {
+        margin-bottom: 0.8rem;
+        justify-content: center;
+    }
+
+    #index-page #content {
+        display: block;
+    }
+
+    #index-page #content .menu-category {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+
+}
 
 
