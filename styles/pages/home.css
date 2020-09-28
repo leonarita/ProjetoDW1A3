@@ -303,6 +303,7 @@
 
     #index-page #content main {
         margin: 2rem 0;
+        margin-bottom: 0;
     }
 
     #index-page #content main .title-main {
