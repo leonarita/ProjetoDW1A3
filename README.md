@@ -28,13 +28,13 @@ Além dos problemas de usabilidade, um problema estrutural é o fato de o site s
 
 ## Planejando o wireframe
 
-O primeiro passo para a reformulação do site é criar um layout sem o tableless, mas sim com os displays (grid, block, flex, ...). 
+O primeiro passo para a reformulação do site é criar um layout sem o tableless, mas sim com os **displays** (grid, block, flex, ...). 
 <br>
 <br>
 Logo após, deve organizar o layout para que seja clean e organizado, tanto em questão de espaçamentos entre elementos, conteúdos segregados com uma característica em comum quanto com tamanho de letras e espaçamentos adequados. 
 <br>
 <br>
-Por fim, prezar pela responsividade (utilizando media queries e a unidade de medida rem).
+Por fim, prezar pela responsividade (utilizando **media queries** e a **unidade de medida rem**).
 <br>
 <br>
 
