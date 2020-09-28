@@ -345,6 +345,26 @@
 
 @media (max-width: 320px) {
 
+    #index-page header .center img {
+        width: 16rem;
+    }
+
+    #index-page header .center .subtitle-logo {
+        font-size: 1rem;
+    }
+
+    #index-page header .guide .location ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-self: center;
+        align-items: center;
+    }
+
+    #index-page header .guide .location ul li + li {
+        margin-left: 0;
+    }
 }
 
 
