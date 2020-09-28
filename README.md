@@ -15,7 +15,7 @@ As tecnologias utilizadas nesse Projeto são **`HTML`**, **`CSS`** e **`Javascri
 O site escolhido foi o [Macoratti](http://www.macoratti.net/Default.aspx).
 <br>
 <br>
-Segundo os critérios de usabilidade segundo a **`ISO 9241-11`**, foram encontrados os seguintes problemas:
+Segundo os critérios de usabilidade da norma **`ISO 9241-11`**, foram encontrados os seguintes problemas:
 ```
 1. Capacidade de leitura : o site possui tamanhos de espaçamento e linha inadequados
 2. Densidade de informação : o site não possui organização criteriosa de conteudo
