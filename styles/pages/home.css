@@ -124,6 +124,10 @@
     padding: 0.4rem;
 }
 
+#index-page #content main a{
+    cursor: auto;
+}
+
 #index-page #content main .article {
     margin-top: 1.4rem;
     border: 0.01rem solid ;
@@ -138,6 +142,7 @@
     border: 0.01rem solid;
 
     background: linear-gradient(42deg, var(--secondary-color) 0.72%, #FCF0F4 110%);
+    cursor: pointer;
 }
 
 #index-page #content main .article .course-article {
@@ -160,6 +165,7 @@
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     border: 0.01rem solid;
+    cursor: pointer;
 }
 
 #index-page #content main .article .info-article p {
