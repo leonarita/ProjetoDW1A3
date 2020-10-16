@@ -85,7 +85,6 @@
 #index-page #content main .title-main {
     display: flex;
     justify-content: center;
-    background-color: var(--primary-color);
     width: 100%;
     border-radius: 0.6rem;
     height: 5rem;
@@ -136,7 +135,6 @@
 }
 
 #index-page #content main .article .title-article {
-    background-color: var(--secondary-color);
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     border: 0.01rem solid;
@@ -238,6 +236,8 @@
     padding: 0.4rem 0.5rem 0.2rem 0.8rem;
     cursor: pointer;
     transition: 0.2s;
+    cursor: not-allowed;
+
 }
 
 #index-page #content .menu ul li:before {
@@ -247,12 +247,14 @@
     margin-right: 0.4rem;
 }
 
+/*
 #index-page #content .menu ul li:hover {
     background-color: var(--hover-color);
     border-bottom-left-radius: 0.4rem;
     border-bottom-right-radius: 0.4rem;
     border: 0.01rem solid;
 }
+*/
 
 #index-page #content .menu .images-sale {
     display: flex;
