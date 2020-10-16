@@ -1,0 +1,35 @@
+/* Leonardo Narita (SP3022498) */
+
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-up-1 {
+    animation-name: up;
+    animation-duration: 300ms; 
+    animation-fill-mode: backwards;
+    animation-delay: 100ms;
+}
+
+.animate-up-2 {
+    animation-name: up;
+    animation-duration: 300ms; 
+    animation-fill-mode: backwards;
+    animation-delay: 200ms;
+}
+
+.animate-up-3 {
+    animation-name: up;
+    animation-duration: 300ms; 
+    animation-fill-mode: backwards;
+    animation-delay: 300ms;
+}
+
