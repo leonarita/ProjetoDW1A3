@@ -1,42 +1,35 @@
 /* Natan da Fonseca Lisboa (SP3024784) */
 
-/*Usado*/
 #contact-page {
     margin: 0.8rem 4rem;
 }
 
-/*Usado*/
 #contact-page header {
     margin: 2rem 0;
 }
 
-/*Usado*/
 #contact-page header .center {
     display: flex;
     justify-content: center;
 }
 
-/*Usado*/
 #contact-page header .center .subtitle-logo {
     color: var(--secondary-color);
     margin-block-start: 0;
 }
 
-/*Usado*/
 #contact-page header .guide {
     display: flex;
     justify-content: space-between;
     margin: 0 1.4rem;
 }
 
-/*Usado*/
 #contact-page header .guide .location ul {
     display: flex;
     flex-direction: row;
     list-style: none;
 }
 
-/*Usado*/
 #contact-page header .guide .location ul li {
     text-decoration: underline;
     cursor: pointer;
@@ -46,28 +39,9 @@
     padding: 0.4rem;
 }
 
-/*
-#contact-page header .guide .location ul li + li {
-    margin-left: 1rem;
-}
-
 #contact-page header .guide .location ul li:hover {
     background-color: var(--hover-color);
 }
-
-#contact-page header .guide input[type=text] {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-
-    width: 188px;
-    height: 16px;
-    font-family: serif;
-    padding: 0.8rem;
-}
-*/
-
 
 /* webkit solution */ /*Usado*/
 #contact-page header .guide input[type=text]::-webkit-input-placeholder { 
@@ -81,13 +55,11 @@
     text-align:right; 
 }
 
-/*Usado*/
 #contact-page #content {
     display: grid;
     column-gap: 4rem;
 }
 
-/*Usado*/
 #contact-page #content .form {
     display: flex;
     flex-direction: column;
@@ -101,7 +73,6 @@
 	padding: 1.2rem 0;
 }
 
-/*Usado*/
 #contact-page #content .title-form {
     display: flex;
     justify-content: center;
@@ -115,7 +86,6 @@
     background: linear-gradient(7.70deg, var(--primary-color) 3.15%, #ffecf1 97.95%);
 }
 
-/*Usado*/
 #contact-page #content form input:not([type=radio]), #contact-page #content form textarea{ 
 	display: flex;
 	width: 90%;
@@ -130,7 +100,6 @@
 	margin: 0.5rem 0;
 } 
 
-/*Usado*/
 #contact-page #content form input[type=radio]{ 
 	margin: 0.5rem;
 	margin-top: 1rem;
@@ -163,7 +132,7 @@
 	background: linear-gradient(7.70deg, var(--primary-color) 3.15%, #ffecf1 97.95%);
 }
 
-#contact-page #content form #btEnviar{
+#contact-page #content form #divBtEnviar{
 	display: flex;
     justify-content: center;
     align-items: center;
@@ -173,204 +142,6 @@
 #contact-page .foot .copyright {
     flex-direction: column;
 }
-
-/*
-#contact-page #content form input:hover{
-	outline: none;
-}
-
-#contact-page #content form input[type=text]::moz-placeholder { 
-    font-family: FontAwesome;
-    text-align:left; 
-}
-
-#contact-page #content form .container-total-articles .total-articles {
-    margin-top: 2rem;
-    width: 60%;
-    border-radius: 0.6rem;
-    height: 2.6rem;
-    align-items: center;
-    
-    display: flex;
-    justify-content: center;
-    justify-self: center;
-
-    border: 1px solid #B3DAE2;
-    box-sizing: border-box;
-    background: linear-gradient(7.70deg, var(--primary-color) 3.15%, #ffecf1 97.95%);
-    border-radius: 20px;
-}
-
-#contact-page #content form .container-total-articles .total-articles p {
-    display: flex;
-    justify-content: center;
-    padding: 0.4rem;
-}
-
-#contact-page #content form a {
-    cursor: auto;
-}
-
-#contact-page #content form .article {
-    margin-top: 1.4rem;
-    border: 0.01rem solid ;
-    width: 80%;
-    border-radius: 1rem;
-}
-
-#contact-page #content form .article .title-article {
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    border: 0.01rem solid;
-
-    background: linear-gradient(42deg, var(--secondary-color) 0.72%, #FCF0F4 110%);
-    cursor: pointer;
-}
-
-#contact-page #content form .article .course-article {
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    border: 0.01rem solid;
-
-    border: 1px solid #B3DAE2;
-    box-sizing: border-box;
-    background: linear-gradient(7.70deg, var(--primary-color) 3.15%, #ffecf1 97.95%);
-}
-
-#contact-page #content form .article .title-article h4, #contact-page #content form .article .course-article h4 {
-    padding: 0.8rem 0;
-    display: flex;
-    justify-content: center;
-}
-
-#contact-page #content form .article .info-article {
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    border: 0.01rem solid;
-    cursor: pointer;
-}
-
-#contact-page #content form .article .info-article p {
-    padding: 0.4rem 0;
-    padding-left: 0.8rem;
-}
-
-#contact-page #content form .article .info-article p:hover {
-    background-color: var(--hover-color);
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    border: 0.01rem solid;
-}
-
-#contact-page #content form a {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-}
-
-#contact-page #content form .new {
-    display: flex;
-    justify-content: center;
-    margin-top: 8rem;
-}
-
-#contact-page #content .menu {
-    border: 0.1rem solid var(--table-border-color);
-
-    border-radius: 0.6rem;
-    width: 18rem;
-    margin: 1rem 0;
-}
-
-#contact-page #content .menu .menu-title {
-    display: flex;
-    justify-content: space-between;
-
-    padding: 0.6rem;
-    background-color: var(--menu-color);
-
-    border-bottom: 0.1rem solid var(--table-border-color);
-    border-top-left-radius: 0.4rem;
-    border-top-right-radius: 0.4rem;
-}
-
-#contact-page #content .menu .menu-title button {
-    background-color: var(--menu-color);
-    border: none;
-}
-
-#contact-page #content .menu .menu-title .minimize {
-    width: 1rem;
-}
-
-#contact-page #content .menu h3 {
-    color: #f0f0f5;
-    background-clip: content-box;
-    display: flex;
-    justify-content: center;
-}
-
-#contact-page #content .menu ul {
-    list-style: none;
-}
-
-#contact-page #content .menu ul li {
-    color: var(--primary-color-dark);
-    padding: 0.4rem 0.5rem 0.2rem 0.8rem;
-    cursor: pointer;
-    transition: 0.2s;
-    cursor: not-allowed;
-
-}
-
-#contact-page #content .menu ul li:before {
-    content: '\2022';
-    margin: 0 2px;
-    color: var(--secondary-color);
-    margin-right: 0.4rem;
-}
-
-/*
-#contact-page #content .menu ul li:hover {
-    background-color: var(--hover-color);
-    border-bottom-left-radius: 0.4rem;
-    border-bottom-right-radius: 0.4rem;
-    border: 0.01rem solid;
-}
-
-#contact-page #content .menu .images-sale {
-    display: flex;
-    justify-content: space-between;
-}
-
-#contact-page #content .menu .images-sale img {
-    width: 5rem;
-    height: 8rem;
-}
-
-#contact-page #content .message {
-    display: flex;
-    justify-content: center;
-    text-decoration: underline;
-    cursor: pointer;
-    transition: .2s;
-
-    border-radius: 0.6rem;
-    padding: 0.4rem;
-    margin-bottom: 1rem;
-}
-
-#contact-page #content .message:hover {
-    background-color: var(--hover-color);
-}
-
-#contact-page #content .download {
-    display: flex;
-    justify-content: center;
-}
-
-*/
 
 #contact-page .foot {
     margin-top: 1rem;
@@ -384,105 +155,6 @@
 #contact-page .foot .copyright {
     display: flex;
 }
-
-/*
-@media (max-width: 1200px) {
-
-    #contact-page #content .menu {
-        width: 14rem;
-    }
-}
-
-@media (max-width: 900px) {
-
-    #contact-page header .guide {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 0;
-    }
-
-    #contact-page header .guide .location ul {
-        margin-bottom: 0.8rem;
-        justify-content: center;
-    }
-
-    #contact-page #content {
-        display: block;
-    }
-
-    #contact-page #content .menu {
-        width: 100%;
-    }
-
-    #contact-page #content form {
-        margin: 2rem 0;
-        margin-bottom: 0;
-    }
-
-    #contact-page #content form .title-form {
-        height: 4rem;
-        padding: 0.4rem;
-    }
-
-    #contact-page #content .menu .images-sale img {
-        width: 4rem;
-    }
-
-    #contact-page #content form .container-total-articles .total-articles {
-        width: 100%;
-    }
-
-    #contact-page #content form .new {
-        margin-top: 1rem;
-    }
-
-    #contact-page .foot p {
-        font-size: 0.6rem;
-    }
-
-    #contact-page .foot .copyright {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 500px) {
-
-    #contact-page header .center .subtitle-logo {
-        font-size: 0.9rem;
-    }
-
-    #contact-page #content .menu {
-        margin-top: 1rem;
-    }
-}
-
-@media (max-width: 320px) {
-
-    #contact-page header .center img {
-        width: 16rem;
-    }
-
-    #contact-page header .center .subtitle-logo {
-        font-size: 1rem;
-    }
-
-    #contact-page header .guide .location ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        justify-items: center;
-        align-self: center;
-        align-items: center;
-    }
-
-    #contact-page header .guide .location ul li + li {
-        margin-left: 0;
-    }
-	
-}
-
-*/
 
 @media (max-width: 800px){
 	

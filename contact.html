@@ -21,26 +21,26 @@
 
         <header>
 
-                <div class="center">
-                    <a href="#">
-                        <img src="./assets/gif/logotipo.gif" alt="Macoratti.net">
-                        <h4 class="subtitle-logo">Sua fonte de estudos confiável sobre .NET</h4>
-                    </a>
-                </div>
+			<div class="center">
+				<a href="#">
+					<img src="./assets/gif/logotipo.gif" alt="Macoratti.net">
+					<h4 class="subtitle-logo">Sua fonte de estudos confiável sobre .NET</h4>
+				</a>
+			</div>
 
-                <br>
-                <div class="guide">
+			<br>
+			<div class="guide">
 
-                    <div class="location">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li>Fórum Geral</li>
-							<li>Mapa do site</li> 
-                            <li><a href="contact.html">Contato</a></li>
-                        </ul>
-                    </div>
-					
+				<div class="location">
+					<ul>
+						<li><a id="home" href="index.html">Home</a></li>
+						<li><a id="forum-geral">Fórum Geral</a></li>
+						<li><a id="mapa-site">Mapa do site</a></li> 
+						<li><a id="contato" href="contact.html">Contato</a></li>
+					</ul>
 				</div>
+				
+			</div>
 		
 		</header>
 				
@@ -50,41 +50,41 @@
 			
 			<div class="form">
 			
-				<form>
+				<form method="get">
 					<br>
 					<div class="input-container">
 						<label for="nome" class="lb-style">Nome</label>
-						<input type="text" id="nome" name="formdata" size="52" placeholder="Nome">
+						<input type="text" id="nome" name="formdata" size="52" placeholder="Nome" required />
 					</div>
 					<div class="input-container">
 						<label for="sobrenome" class="lb-style">Sobrenome</label>
-						<input type="text" id="sobrenome" name="formdata" size="52" placeholder="Sobrenome"></p>
+						<input type="text" id="sobrenome" name="formdata" size="52" placeholder="Sobrenome" required />
 					</div>
 					<div id="rbSexo">
 						Gênero:
 						<div class="opt-radios">
-							<input type="radio" id="rbMasculino" name="sexo">
+							<input type="radio" id="rbMasculino" name="sexo" required />
 							<label for="rbMasculino">Masculino</label>
 						</div>
 						<div class="opt-radios">
-							<input type="radio" id="rbFeminino" name="sexo">
+							<input type="radio" id="rbFeminino" name="sexo" />
 							<label for="rbFeminino">Feminino</label>
 						</div>
 					</div>
 					<div class="input-container">
 						<label for="email" class="lb-style">E-mail</label>
-						<input type="text" id="email" name="formdata" size="52" placeholder="E-mail">
+						<input type="email" id="email" name="formdata" size="52" placeholder="E-mail" required />
 					</div>
 					<div class="input-container">
 						<label for="telefone" class="lb-style">Telefone</label>
-						<input type="text" id="telefone" name="formdata" size="52" placeholder="Telefone">
+						<input type="text" id="telefone" name="formdata" size="52" placeholder="Telefone" required />
 					</div>
 					<div class="input-container">
-						<label for="telefone" class="lb-style">Mensagem</label>
-						<textarea type="comments" id="mensagem" cols="20" rows="10" name="formdata" placeholder="Mensagem"></textarea>
+						<label for="mensagem" class="lb-style">Mensagem</label>
+						<textarea type="comments" id="mensagem" cols="20" rows="10" name="formdata" placeholder="Mensagem" required></textarea>
 					</div>
-					<div id="btEnviar">
-						<button type="submit">Enviar</button>
+					<div id="divBtEnviar">
+						<button id="btEnviar" type="submit">Enviar</button>
 					</div>
 				</form>
 			
@@ -107,6 +107,8 @@
 		</footer>
 	
 	</div>
+	
+	<script src="scripts/contact.js"></script>
 	
 </body>
 </html>
