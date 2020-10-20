@@ -90,9 +90,10 @@ function validarMensagem(){
 
 function enviarFormulario(){
 	alert("Dados enviados com sucesso!");
-	window.location.href = 'index.html';
+	window.location.href = './index.html';
 }
 
 var chamadasFuncaoValidarNome = 0;
 btEnviar = document.getElementById("btEnviar");
-btEnviar.addEventListener("click", validarNome);	
+btEnviar.addEventListener("click", validarNome);
+	

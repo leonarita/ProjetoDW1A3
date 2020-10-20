@@ -1,0 +1,90 @@
+/*Natan da Fonseca Lisboa (SP3024784)*/
+
+#sitemap #bloco{
+	width: 8rem;
+	height: 4rem;
+	border: 0.2rem;
+	border-style: outset;
+	border-color: black;
+	position: relative;
+	left: 16rem;
+	top: 1rem;
+	text-align: center;
+}
+
+#sitemap .titulo{
+	margin-top: 1rem;
+}
+
+#sitemap #linha-vertical1 {
+  height: 3rem;
+  border-left: 2px solid;
+  margin-left: 20rem;
+  margin-top: 1rem;
+}
+
+#sitemap #linha-horizontal1 {
+  width: 30rem;
+  border: 2px solid;
+  margin-left: 5rem;
+}
+
+#sitemap #linha-vertical2 {
+  height: 3rem;
+  border-left: 2px solid;
+  margin-left: 5rem;
+}
+
+#sitemap #linha-vertical3 {
+  height: 3rem;
+  border-left: 2px solid;
+  margin-left: 14.9rem;
+  margin-top: -3.99rem;
+}
+
+#sitemap #linha-vertical4 {
+  height: 3rem;
+  border-left: 2px solid;
+  margin-left: 18.5rem;
+  margin-top: -5.4rem;
+}
+
+#sitemap #linha-vertical2 #bloco2{
+	margin-right: 5rem;
+}
+
+#sitemap #bloco2{
+	width: 8rem;
+	height: 4rem;
+	border: 0.2rem;
+	border-style: outset;
+	border-color: black;
+	position: relative;
+	right: 4rem;
+	top: 3rem;
+	text-align: center;
+}
+
+#sitemap #bloco3{
+	width: 8rem;
+	height: 4rem;
+	border: 0.2rem;
+	border-style: outset;
+	border-color: black;
+	position: relative;
+	left: -4rem;
+	top: 3rem;
+	text-align: center;
+}
+
+#sitemap #bloco4{
+	width: 8rem;
+	height: 4rem;
+	border: 0.2rem;
+	border-style: outset;
+	border-color: black;
+	position: relative;
+	right: 4rem;
+	top: 3rem;
+	text-align: center;
+}
