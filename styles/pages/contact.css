@@ -1,0 +1,177 @@
+/* Natan da Fonseca Lisboa (SP3024784) */
+
+#contact-page {
+    margin: 0.8rem 4rem;
+}
+
+#contact-page header {
+    margin: 2rem 0;
+}
+
+#contact-page header .center {
+    display: flex;
+    justify-content: center;
+}
+
+#contact-page header .center .subtitle-logo {
+    color: var(--secondary-color);
+    margin-block-start: 0;
+}
+
+#contact-page header .guide {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1.4rem;
+}
+
+#contact-page header .guide .location ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+#contact-page header .guide .location ul li {
+    text-decoration: underline;
+    cursor: pointer;
+    transition: .2s;
+
+    border-radius: 0.6rem;
+    padding: 0.4rem;
+}
+
+#contact-page header .guide .location ul li:hover {
+    background-color: var(--hover-color);
+}
+
+/* webkit solution */ /*Usado*/
+#contact-page header .guide input[type=text]::-webkit-input-placeholder { 
+    font-family: FontAwesome;
+    text-align:right; 
+}
+
+/* mozilla solution */ /*Usado*/
+#contact-page header .guide input[type=text]:-moz-placeholder { 
+    font-family: FontAwesome;
+    text-align:right; 
+}
+
+#contact-page #content {
+    display: grid;
+    column-gap: 4rem;
+}
+
+#contact-page #content .form {
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #FFF;
+    margin: 0 20%;
+	margin-top: 1.6rem;
+	margin-bottom: 1.6rem;
+	border-radius: 1rem;
+	padding: 1.2rem 0;
+}
+
+#contact-page #content .title-form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: 0.6rem;
+    height: 5rem;
+    align-items: center;
+
+    border: 1px solid #B3DAE2;
+    box-sizing: border-box;
+    background: linear-gradient(7.70deg, var(--primary-color) 3.15%, #ffecf1 97.95%);
+}
+
+#contact-page #content form input:not([type=radio]), #contact-page #content form textarea{ 
+	display: flex;
+	width: 90%;
+	border-color:#cccccc;
+	font-size:16px;
+	border-radius:17px; 
+	border-style:solid; 
+	box-shadow:inset 0px 0px 4px 0px rgba(42,42,42,.75);
+	padding:18px;
+	border-width:2px;
+	margin-top: 0.2rem;
+	margin: 0.5rem 0;
+} 
+
+#contact-page #content form input[type=radio]{ 
+	margin: 0.5rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+} 
+
+#contact-page #content .form form .input-container{
+	margin-top: 1rem;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-page #content .form .input-container .lb-style {
+	color: #8FA7B3;
+}
+
+#contact-page #content form #rbSexo{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-page #content form button{
+    height: 2rem;
+    width: 20%;
+    border-radius: 7.2px;
+    font-weight: 600;
+	background: linear-gradient(7.70deg, var(--primary-color) 3.15%, #ffecf1 97.95%);
+}
+
+#contact-page #content form #divBtEnviar{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-top: 0.6rem;
+}
+
+#contact-page .foot .copyright {
+    flex-direction: column;
+}
+
+#contact-page .foot {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#contact-page .foot .copyright {
+    display: flex;
+}
+
+@media (max-width: 800px){
+	
+	#contact-page #content form #rbSexo{
+		flex-direction: column;
+	}
+	
+	#contact-page #content form #btEnviar button{
+		width: 50%;
+	}
+	
+}
+
+@media (max-width: 600px){
+	
+	#contact-page #content form #btEnviar button{
+		width: 100%;
+	}
+	
+}
