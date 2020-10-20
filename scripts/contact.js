@@ -1,4 +1,4 @@
-/*Natan da Fonseca Lisboa (SP3024784)*/
+/* Natan da Fonseca Lisboa (SP3024784) */
 
 function validarNome(){
 	

@@ -1,4 +1,4 @@
-/* Leonardo Narita (SP3022498) */
+/* Stefany Santos (SP303027X) */
 
 #content-page {
     margin: 0.8rem 4rem;
@@ -126,6 +126,7 @@
 
 #content-page #content #conteudo table tr td {
     padding: 0.8rem;
+}
 
 #content-page .foot .copyright {
     display: flex;
