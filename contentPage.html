@@ -1,0 +1,385 @@
+<!-- Stefany Santos (SP303027X) -->
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Poppins&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/animations.css">
+    <link rel="stylesheet" href="./styles/pages/contentPage.css">
+
+    <title> C# - Tratando com Strings e Chars </title>
+
+</head>
+
+<body>
+    <div id="content-page">
+
+        <header>
+
+            <div class="center">
+                <a href="#">
+                    <img src="./assets/gif/logotipo.gif" alt="Macoratti.net">
+                    <h4 class="subtitle-logo">Sua fonte de estudos confiável sobre .NET</h4>
+
+                </a>
+            </div>
+
+            <br>
+            <div class="guide">
+
+                <div class="location">
+                    <ul>
+
+                        <li>Home</li>
+                        <li>Fórum Geral</li>
+                        <li>Contato</li>
+                        <li>Advertência</li>
+
+                    </ul>
+                </div>
+
+                <input type="text" name="article" id="article"
+                    placeholder="Pesquisar artigo &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#xF002;" value="" tabindex="1"
+                    autocomplete="off">
+
+            </div>
+        </header>
+
+        <div id="content">
+
+            <h3 class="title-main">Char e Strings em C#</h3>
+
+            <main id="conteudo">
+
+                <p>
+                    &nbsp; &nbsp;&nbsp;&nbsp; Neste exemplo temos o seguinte cenário : Você possui uma variável do tipo 
+                    <b>Char</b> e deseja determinar o tipo de caractere que a variável contém : se é uma letra, dígito, número, 
+                    caractere de pontuação, caractere de controle, símbolo, espaço em branco, etc.
+                </p>
+
+                <p>
+                    &nbsp; &nbsp;&nbsp;&nbsp; Vamos criar um projeto do tipo
+                    <strong>Windows Forms Application</strong> usando o
+                    <strong>Visual C# 2010 Express Edition</strong> com o nome
+                    <b>tratandoStringsChars</b>;
+                </p>
+
+                <p>
+                    &nbsp; &nbsp;&nbsp;&nbsp; Inclua uma classe no projeto através do menu Project clicando em
+                    <b>Add Class </b>e informando o nome
+                    <b>MacStrings.cs:</b>
+                </p>
+
+                <p>
+                    A seguir digite o código abaixo nesta classe:
+                </p>
+
+                <div class="code">
+
+                    <pre>
+
+    Using System;
+
+    namespace Macoratti
+    {
+        public enum CharTipo
+        {
+            Digito,
+            Letra,
+            Numero,
+            Pontuacao,
+            Simbolo,
+            Espaço,
+            Separador,
+            Desconhecido
+        }
+
+        static class MacStrings
+        {
+            public static CharTipo GetTipoCharNaString(this char _Char)
+            {
+                if (Char.IsLetter(_Char))
+                {
+                    return CharTipo.Letra;
+                }
+                else if (Char.IsNumber(_Char))
+                {
+                    return CharTipo.Numero;
+                }
+                else if (Char.IsPunctuation(_Char))
+                {
+                    return CharTipo.Pontuacao;
+                }
+                else if (Char.IsSymbol(_Char))
+                {
+                    return CharTipo.Simbolo;
+                }
+                else if (Char.IsWhiteSpace(_Char))
+                {
+                    return CharTipo.Espaço;
+                }
+                else if (Char.IsSeparator(_Char))
+                {
+                    return CharTipo.Separador;
+                }
+                else
+                {
+                    return CharTipo.Desconhecido;
+                }
+                
+            }
+                
+            public static CharTipo GetTipoCharNaString(string _strg, int charPosicao)
+            {
+                if (Char.IsLetter(_strg, charPosicao))
+                {
+                    return CharTipo.Letra;
+                }
+                else if (Char.IsNumber(_strg, charPosicao))
+                {
+                    return CharTipo.Numero;
+                }
+                else if (Char.IsPunctuation(_strg, charPosicao))
+                {
+                    return CharTipo.Pontuacao;
+                }
+                else if (Char.IsSymbol( _strg, charPosicao))
+                {
+                    return CharTipo.Simbolo;
+                }
+                else if (Char.IsWhiteSpace(_strg, charPosicao))
+                {
+                    return CharTipo.Espaço;
+                }
+                else if (Char.IsSeparator( _strg,charPosicao))
+                {
+                    return CharTipo.Separador;
+                }
+                else
+                {
+                    return CharTipo.Desconhecido;
+                }
+            }
+        }
+    }
+                    </pre>
+                </div>
+
+                <br>
+                <table>
+                    <font face="Trebuchet MS">
+                        A classe <b>MacStrings</b> é uma classe estática que possui uma enumeração:
+
+                    </font>
+
+                    <p>
+                        <font color="#0000FF" face="Trebuchet MS">public enum CharTipo<br>
+                            {<br>
+                            &nbsp;&nbsp;&nbsp;Digito,<br>
+                            &nbsp;&nbsp;&nbsp;Letra,<br>
+                            &nbsp;&nbsp;&nbsp;Numero,<br>
+                            &nbsp;&nbsp;&nbsp;Pontuacao,<br>
+                            &nbsp;&nbsp;&nbsp;Simbolo,<br>
+                            &nbsp;&nbsp;&nbsp;Espaço,<br>
+                            &nbsp;&nbsp;&nbsp;Separador,<br>
+                            &nbsp;&nbsp;&nbsp;Desconhecido<br>
+                            }
+
+                        </font>
+                    </p>
+
+                    <p>
+                        <font face="Trebuchet MS">e dois métodos estáticos sobrecarregados:
+
+                        </font>
+                    </p>
+
+                    <ul>
+                        <li>
+                            <font face="Trebuchet MS"><strong>GetTipoCharNaString(this char _Char)</strong></font>
+                        </li>
+                        <li>
+                            <font face="Trebuchet MS"><strong>GetTipoCharNaString(string _strg, int
+                                    charPosicao)</strong>
+
+                            </font>
+                        </li>
+                    </ul>
+
+                    <p>
+                        <font face="Trebuchet MS">O primeiro retorna o tipo do caractere avaliado;
+
+                        </font>
+                    </p>
+
+                    <p>
+                        <font face="Trebuchet MS">O segundo retorna o tipo do caractere na posição especificada;
+
+                        </font>
+                    </p>
+
+                    <p>
+                        <font face="Trebuchet MS">O tipo de caractere é determinado pela enumeração definida na
+                            classe com base nos métodos<br> estáticos da classe <b>Char</b> conforme tabela abaixo:
+
+                        </font>
+                    </p>
+                </table>
+
+                
+
+                <table border="1" cellpadding="0" cellspacing="0">
+                    
+                    <tr>
+                        <td bgcolor="#BEBEBE">
+                            <font size="3" face="Trebuchet MS"><strong>Método Char</strong></font>
+                        </td>
+                        <td bgcolor="#BEBEBE">
+                            <font size="3" face="Trebuchet MS"><strong>Descrição</strong></font>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <font size="3" face="Trebuchet MS"><strong>IsDigit</strong></font>
+                        </td>
+                        <td>
+                            <font size="3" face="Trebuchet MS">Qualquer digito decimal no intervalo de 0-9 em todos
+                                os locale Unicode </font>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <font size="3" face="Trebuchet MS"><strong>IsLetter</strong></font>
+                        </td>
+                        <td>
+                            <font size="3" face="Trebuchet MS">Qualquer letra</font>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <font size="3" face="Trebuchet MS"><strong>IsNumber</strong></font>
+                        </td>
+                        <td>
+                            <font size="3" face="Trebuchet MS">Qualquer dígito decimal ou hexadecimal
+                                (<em>superscripts,subscripts</em>)</font>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <font size="3" face="Trebuchet MS"><strong>IsPontuaction</strong></font>
+                        </td>
+                        <td>
+                            <font size="3" face="Trebuchet MS">Qualquer caractere de pontuação</font>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <font size="3" face="Trebuchet MS"><strong>IsSeparator</strong></font>
+                        </td>
+                        <td>
+                            <font size="3" face="Trebuchet MS">Um espaço separando palavras, uma linha , ou
+                                separador de parágrafo </font>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <font size="3" face="Trebuchet MS"><strong>IsSurrogate</strong></font>
+                        </td>
+                        <td>
+                            <font size="3" face="Trebuchet MS">Qualquer caractere surrogate no intervalo
+                                \UD800&#150;\UDFFF</font>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <font size="3" face="Trebuchet MS"><strong>IsSymbol</strong></font>
+                        </td>
+                        <td>
+                            <font size="3" face="Trebuchet MS">Qualquer símbolo matemático, de moeda ou outro símbolo.</font>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <font size="3" face="Trebuchet MS"><strong>IsWhiteSpace</strong></font>
+                        </td>
+                        <td>
+                            <font size="3" face="Trebuchet MS">Qualquer caractere de espaço e dos seguintes
+                                caracteres: </font>
+                            <p>
+                                <font size="3" face="Trebuchet MS">
+                                    \U0009<br>
+                                    \U000A<br>
+                                    \U000B<br>
+                                    \U000C<br>
+                                    \U000D<br>
+                                    \U0085<br>
+                                    \U2028<br>
+                                    \U2029
+
+                                </font>
+                            </p>
+
+                    </tr>
+                </table>
+
+                <p>
+                    <font size="2" face="Trebuchet MS">
+                        <strong>Nota</strong>:
+                        <strong>Surrogate(Substituto)-</strong>
+
+                    </font>
+
+                    <font color="#FF0000" size="2" face="Trebuchet MS">
+                        <em>
+                            <strong>
+                                Alguns personagens não têm uma representação <br> válida em Unicode. Estas
+                                caracteres têm alguns valores especiais, eles são <br> compostos de dois caracteres
+                                Unicode em dois intervalos
+                                específicos de tal <br> forma que o primeiro caractere Unicode está em um intervalo
+                                <br> (por exemplo 0xD800-0xD8FF) eo segundo caractere Unicode
+                                é na segunda faixa <br> (por exemplo 0xDC00 -0xDCFF).
+
+                            </strong>
+                        </em>
+                    </font>
+
+                    <font color="#FF0000" face="Trebuchet MS"><em><strong><br> </strong></em></font>
+                </p>
+            </main>
+        </div>
+
+        <footer>
+            <div class="foot">
+                <div class="copyright">
+                    <p>Copyright © 2010 Macoratti.net</p>
+                    <p>- Todos os direitos reservados.</p>
+
+                </div>
+
+                <p>Powered by Macoratti</p>
+                <br>
+
+                <p>Reformuled by <strong>Stefany Santos</strong></p>
+
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
