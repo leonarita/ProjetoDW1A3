@@ -1,0 +1,202 @@
+/*Natan da Fonseca Lisboa (SP3024784)*/
+
+#sitemap{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(7,1fr);
+	margin-top: 1rem;
+}
+
+#sitemap a{
+	transition: background-color 0.2s;
+}
+
+#sitemap a:hover{
+	background-color: var(--hover-color);
+}
+
+#sitemap .bloco{
+	width: 6rem;
+	height: 3rem;
+	border: 0.2rem;
+	border-style: outset;
+	border-color: black;
+	text-align: center;
+	padding: 0.3rem;
+}
+
+#sitemap .layout{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+}
+
+#sitemap .centralize{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	justify-self: center;
+}
+
+#sitemap .linha-vertical{
+	height: 7rem;
+    border-right: 1px solid black;
+}
+
+#sitemap .linha-horizontal{
+	width: 7rem;
+    border: 1px solid #000;
+}
+
+
+/*
+#sitemap #bloco{
+	width: 8rem;
+	height: 4rem;
+	border: 0.2rem;
+	border-style: outset;
+	border-color: black;
+	text-align: center; 
+	position: relative;
+	margin-left: 15rem;
+	margin-top: 1rem;	
+}
+
+#sitemap .titulo{
+	margin-top: 1rem;
+}
+
+#sitemap #linha-vertical1 {
+  position: relative;
+  height: 3rem;
+  border-left: 2px solid;
+  margin-left: 19rem;
+}
+
+#sitemap #linha-horizontal1 {
+  position: relative;
+  width: 30rem;
+  border: 2px solid;
+  margin-left: 5rem;
+  margin-top: 0rem;
+}
+
+#sitemap #linha-vertical2 {
+  position: relative;
+  height: 3rem;
+  border-left: 2px solid;
+  margin-left: 5rem;
+  margin-top: -3rem;
+}
+
+#sitemap #linha-vertical3 {
+  position: relative;
+  height: 3rem;
+  border-left: 2px solid;
+  margin-left: 21.5rem;
+  margin-top: -18.3rem;
+}
+
+#sitemap #linha-vertical3-1 {
+  position: relative;
+  height: 3rem;
+  border-left: 2px solid;
+  margin-left: -4rem;
+  margin-top: -1rem;
+}
+
+#sitemap #linha-vertical3-2 {
+	
+  height: 3rem;
+  border-left: 2px solid;
+  margin-left: 14.9rem;
+  margin-top: -3.99rem;
+}
+
+#sitemap #linha-vertical3-3 {
+  height: 3rem;
+  border-left: 2px solid;
+  margin-left: 14.9rem;
+  margin-top: -3.99rem;
+}
+
+#sitemap #linha-vertical4 {
+  height: 3rem;
+  border-left: 2px solid;
+  margin-left: 11.8rem;
+  margin-top: -27.3rem;
+}
+
+#sitemap #linha-vertical2 #bloco2{
+	margin-top: 4rem;
+}
+
+#sitemap #bloco2{
+	width: 8rem;
+	height: 4rem;
+	border: 0.2rem;
+	border-style: outset;
+	border-color: black;
+	margin-right: 4rem;
+	margin-top: 3rem;
+	text-align: center;
+}
+
+#sitemap #bloco3{
+	width: 8rem;
+	height: 4rem;
+	border: 0.2rem;
+	border-style: outset;
+	border-color: black;
+	margin-left: -4rem;
+	margin-top: 3rem;
+	text-align: center;
+}
+
+#sitemap #bloco3-1{
+	width: 8rem;
+	height: 4rem;
+	border: 0.2rem;
+	border-style: outset;
+	border-color: black;
+	
+	margin-left: -25rem;
+	margin-top: 10rem;
+	text-align: center;
+}
+
+#sitemap #bloco3-2{
+	width: 8rem;
+	height: 4rem;
+	border: 0.2rem;
+	border-style: outset;
+	border-color: black;
+	
+	margin-left: -15rem;
+	margin-top: 11rem;
+	text-align: center;
+}
+
+#sitemap #bloco3-3{
+	width: 8rem;
+	height: 4rem;
+	border: 0.2rem;
+	border-style: outset;
+	border-color: black;
+	margin-left: -5rem;
+	margin-top: 12rem;
+	text-align: center;
+}
+
+#sitemap #bloco4{
+	width: 8rem;
+	height: 4rem;
+	border: 0.2rem;
+	border-style: outset;
+	border-color: black;
+	margin-right: 4rem;
+	margin-top: 3rem;
+	text-align: center;
+}
+
+*/
