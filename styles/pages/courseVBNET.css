@@ -107,6 +107,7 @@
 #course-page #content .new {
     display: flex;
     justify-content: space-around;
+    gap: 10px;
 }
 
 #course-page #content .menu {
