@@ -107,7 +107,7 @@
 #content-page #content #conteudo .code {
     border: 1px solid black;
     border-radius: 20px;
-    background: #d6eaf5;
+    background: #f0f0f5;
     white-space: normal;
 }
 
@@ -130,6 +130,11 @@
 
 #content-page .foot .copyright {
     display: flex;
+}
+.scroll{
+    background-color: #333; 
+    overflow: auto;
+    white-space: nowrap;
 }
 
 @media (max-width: 1200px) {
