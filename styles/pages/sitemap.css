@@ -1,0 +1,51 @@
+/*Natan da Fonseca Lisboa (SP3024784)*/
+
+#sitemap{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(7,1fr);
+	margin-top: 1rem;
+}
+
+#sitemap a{
+	transition: background-color 0.2s;
+}
+
+#sitemap a:hover{
+	background-color: var(--hover-color);
+	border-radius: 1rem;
+}
+
+#sitemap .bloco{
+	width: 6rem;
+	height: 3rem;
+	border: 0.2rem;
+	border-style: outset;
+	border-radius: 1rem;
+	border-color: black;
+	text-align: center;
+	padding: 0.3rem;
+}
+
+#sitemap .layout{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+}
+
+#sitemap .centralize{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	justify-self: center;
+}
+
+#sitemap .linha-vertical{
+	height: 7rem;
+    border-right: 1px solid black;
+}
+
+#sitemap .linha-horizontal{
+	width: 7rem;
+    border: 1px solid #000;
+}
